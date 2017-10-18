@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Table</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>National ID</th>
+        <th>University</th>
+        <th>Faculty</th>
+        <th>Major</th>
+        <th>Minor</th>
+        <th>Expected Graduation Year</th>
+      </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="let element of result">
+                <td>{{element.id}}</td>
+                <td>{{element.name}}</td>
+                <td>{{element.email}}</td>
+                <td>{{element.mobile}}</td>
+                <td>{{element.national_id}}</td>
+                <td>{{element.university}}</td>
+                <td>{{element.faculty}}</td>
+                <td>{{element.major}}</td>
+                <td>{{element.minor}}</td>
+                <td>{{element.expected_year}}</td>
+            </tr>
+
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
